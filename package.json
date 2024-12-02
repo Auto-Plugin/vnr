@@ -1,0 +1,23 @@
+{
+  "name": "vnr",
+  "version": "1.0.3",
+  "description": "适用于 node package.json version 的自动更新版本号的 cli 应用",
+  "main": "build.version.js",
+  "type": "module",
+  "bin": {
+    "vnr": "build.version.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "npm publish",
+    "vnr": "node build.version.js",
+    "build": "vnr"
+  },
+  "author": "Larry Zhu",
+  "license": "MIT",
+  "dependencies": {
+    "@inquirer/prompts": "^7.1.0",
+    "execa": "^9.5.1",
+    "pkg-dir": "^8.0.0"
+  }
+}
